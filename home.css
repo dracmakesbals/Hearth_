@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;1000&display=swap");
+/* font-family: 'Nunito', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  background-color: #f3d7ca;
+}
+
+/* START OF NAVBAR */
+
+.header_main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header {
+  display: flex;
+  height: 8vh;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5eee6;
+  padding: 0 20px;
+  border-radius: 50px;
+}
+
+header .logo {
+  font-weight: 1000;
+  font-size: 35px;
+  background: none;
+  color: #e6a4b4;
+  cursor: pointer;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  background: none;
+}
+
+header nav ul a {
+  display: inline-block; /* Ensures the input behaves as a block within the anchor */
+  background: none; /* Removes any background from the anchor */
+  text-decoration: none; /* Removes any underline or link styles */
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  background: none;
+}
+
+header nav ul li {
+  margin-left: 20px;
+  background: none;
+}
+
+header nav ul input {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: white;
+  border: 1px solid #e6a4b4;
+  border-radius: 50px;
+  padding: 5px;
+  color: #e6a4b4;
+  transition: 0.3s ease;
+}
+
+header nav ul input:hover {
+  background-color: #e6a4b4;
+  color: white;
+  transition: 0.3s ease;
+}
+
+header nav .menu {
+  margin-left: 20px;
+  display: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #e6a4b4;
+  font-weight: 800;
+  font-size: 18px;
+  background: none;
+}
+
+/* END OF NAVBAR */
+
+/* START OF HERO SECTION */
+
+section {
+  height: 90vh;
+}
+
+section .main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+section .main .main_text {
+  flex: 1;
+  margin-left: 40px;
+}
+
+section .main .main_text .text_headline {
+  color: #393939;
+  font-weight: 800;
+  font-size: 4.5vmax;
+  line-height: 5vmax;
+}
+
+section .main .main_text .text_para {
+  color: #393939;
+  width: 50%;
+  font-size: 1vmax;
+}
+
+section .main .main_text input {
+  width: 10vmax;
+  position: absolute;
+  font-size: 1vmax;
+  font-weight: 800;
+  padding: 10px;
+  border: 10px solid #393939;
+  border-top: 0;
+  border-left: 0;
+  background-color: #fff8e3;
+  border-radius: 50px;
+  margin-top: 20px;
+  transition: ease 0.3s;
+}
+
+section .main .main_text input:hover {
+  border: 0px solid #393939;
+  border-top: 0;
+  border-left: 0;
+  background-color: #fff8e3;
+  border-radius: 50px;
+  margin-top: 10px;
+  transition: ease 0.3s;
+}
+
+section .main .main_image {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+section .main .main_image img {
+  height: auto;
+  width: 45vmax;
+  margin-right: 30px;
+}
+
+.section2 {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background-color: #fff8e3;
+}
+
+.section2 .main2 {
+  display: flex;
+  background: none;
+}
+
+.section2 .main2 .main2_graph {
+  flex: 1;
+  width: 60vmax;
+  height: auto;
+  background: none;
+  margin-left: 40px;
+}
+
+.section2 .main2 .main2_graph canvas {
+  background: none;
+}
+
+.section2 .main2 .main2_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background: none;
+  margin-right: 40px;
+}
+
+.section2 .main2 .main2_text .text_headline2 {
+  font-size: 5vmax;
+  text-align: end;
+  font-weight: 800;
+  color: #393939;
+  line-height: 5vmax;
+  background: none;
+}
+
+.section2 .main2 .main2_text .text_para2 {
+  text-align: end;
+  font-size: 1vmax;
+  width: 70%;
+  background: none;
+}
+
+.section3 {
+  height: 100vh;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3 svg {
+  background: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.section3 h1 {
+  background: none;
+  font-size: 3vmax;
+}
+
+.section3 p {
+  margin-top: 50px;
+  background: none;
+  font-size: 1vmax;
+  width: 30%;
+  text-align: justify;
+}

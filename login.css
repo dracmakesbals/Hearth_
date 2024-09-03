@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;1000&display=swap");
+/* font-family: 'Nunito', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  background-color: #f3d7ca;
+}
+
+/* START OF NAVBAR */
+
+.header_main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header {
+  display: flex;
+  height: 8vh;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5eee6;
+  padding: 0 20px;
+  border-radius: 50px;
+}
+
+header .logo {
+  font-weight: 1000;
+  font-size: 35px;
+  background: none;
+  color: #e6a4b4;
+  cursor: pointer;
+}
+
+header .logo a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #e6a4b4;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  background: none;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  background: none;
+}
+
+header nav ul li {
+  margin-left: 20px;
+  background: none;
+}
+
+header nav ul input {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: white;
+  border: 1px solid #e6a4b4;
+  border-radius: 50px;
+  padding: 5px;
+  color: #e6a4b4;
+  transition: 0.3s ease;
+}
+
+header nav ul input:hover {
+  background-color: #e6a4b4;
+  color: white;
+  transition: 0.3s ease;
+}
+
+header nav .menu {
+  margin-left: 20px;
+  display: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #e6a4b4;
+  font-weight: 800;
+  font-size: 18px;
+  background: none;
+}
+
+/* END OF NAVBAR */
+
+section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e8e6e3;
+  font-family: "Poppins", sans-serif;
+  color: #121212;
+}
+
+section .login {
+  display: none;
+}
+
+section form {
+  width: clamp(20rem, 50vw, 30rem);
+  /*   border: 5px solid #9bcefa; */
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #f5eee6;
+}
+
+section .form_head {
+  font-size: 50px;
+  font-weight: 800;
+  padding-bottom: 30px;
+  background-color: #f5eee6;
+}
+
+section .inputContainer {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-bottom: 25px;
+  background-color: #f5eee6;
+}
+
+section .inputContainer input {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  outline: none;
+  border: 1px solid #d5d5d5;
+  background-color: transparent;
+  border-radius: 10px;
+  padding-left: 10px;
+  color: #121212;
+  z-index: 10;
+  font-family: "Poppins", sans-serif;
+}
+
+section .inputContainer label {
+  position: relative;
+  font-size: 14px;
+  top: 10px;
+  left: 5px;
+  transition: all ease 0.3s;
+  background-color: #f5eee6;
+}
+
+section .inputContainer input:focus + label,
+input:not(:placeholder-shown) ~ label {
+  top: -13px;
+  transition: all ease 0.3s;
+  background-color: #e6a4b4;
+  border-radius: 10px;
+  padding: 2px 5px;
+  z-index: 11;
+  color: white;
+}
+
+.signup-login-redirect {
+  display: flex;
+  align-items: center;
+  background-color: #f5eee6;
+}
+
+.signup-login-redirect > div {
+  font-size: 14px;
+  width: clamp(13rem, 16vw, 16rem);
+  background-color: #f5eee6;
+}
+
+.signup-login-redirect > div a {
+  font-size: 14px;
+  color: #121212;
+  background-color: #f5eee6;
+}
+
+section .signup-login-redirect .submit {
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: #f5eee6;
+  border-radius: 50px;
+  border: 1px solid #e6a4b4;
+  transition: all ease 0.3s;
+  margin-right: 10px;
+  color: #e6a4b4;
+}
+
+section .submit:hover {
+  background-color: #e6a4b4;
+  transition: all ease 0.3s;
+  position: relative;
+  border-radius: 15px;
+  color: white;
+}
+
+/* END OF LOGIN FORM */
+
+@media screen and (max-width: 768px) {
+  header .nav_links {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    background-color: #e8e6e3;
+    clip-path: circle(50px at 10% -10%);
+    -webkit-clip-path: circle(50px at 10% -10%);
+    transition: all 0.5s ease;
+    z-index: 15;
+  }
+
+  header .nav_links li a {
+    color: #121212;
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+
+  .ham_menu {
+    display: contents;
+    color: #e8e6e3;
+  }
+
+  .user {
+    display: contents;
+    color: #e8e6e3;
+  }
+
+  header .nav_links.open {
+    clip-path: circle(50px at 10% -10%);
+    -webkit-clip-path: circle(1150px at 10% -10%);
+    transition: all 0.5s ease;
+  }
+
+  .nav_links li {
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s ease all;
+  }
+
+  .nav_links li.fade {
+    padding: 0;
+    opacity: 1;
+    transition: 0.5s ease all;
+  }
+
+  .buttons {
+    display: none;
+  }
+}
+
+/* END OF RESPONSIVE NAVBAR */
